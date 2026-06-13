@@ -1,0 +1,27 @@
+{
+  "name": "hesam/php-observer",
+  "description": "Observer Pattern Simulation in Pure PHP",
+  "authors": [
+    {
+      "name": "Hesam",
+      "email": "hesam.kazembeygi@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Events\\": "Events/",
+      "Config\\": "Config/",
+      "Observers\\": "Observers/",
+      "Contracts\\": "Contracts/",
+      "Classes\\": "Classes/",
+      "UseCases\\": "UseCases/"
+    },
+    "files": [
+      "Helper/GeneralHelperFunction.php"
+    ]
+  }
+}

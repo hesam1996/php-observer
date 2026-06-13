@@ -1,0 +1,52 @@
+# Observer Pattern Simulation in Pure PHP
+
+This project is a simple Event-Driven system built with pure PHP using OOP principles.
+It demonstrates the Observer Design Pattern in a real-world scenario where a file download triggers multiple independent
+observers such as logging, analytics, and counters.
+
+### Note that no actual file is downloaded, This is just a test
+
+---
+
+## How it works
+
+1. User clicks download button in `index.php`
+2. `FileDownload` use case is triggered
+3. A `DownloadEvent` is created containing:
+    - file id
+    - file slug
+    - file name
+    - user IP
+    - timestamp
+
+4. Event is passed to Subject (`FileDownload`)
+5. All registered observers are notified:
+    - Analytics → tracks event
+    - Counter → increases download count
+    - Logger → saves log
+
+6. Each observer reacts independently without affecting others
+
+---
+
+## Design Pattern Used
+
+### Observer Pattern
+
+- Subject: UseCases/FileDownload.php
+- Event: Events/DownloadEvent.php
+- Observers:
+    - Observers/Logger.php
+    - Observers/Counter.php
+    - Observers/Analytics.php
+
+The Subject does not know anything about observers.  
+It only broadcasts an event, and observers react independently.
+
+---
+
+Implemented by Hesam kazembeygi
+
+[My Website](https://kazembeygi.com)
+
+[My LinkedIn](https://www.linkedin.com/in/hessam-kazembeygi)

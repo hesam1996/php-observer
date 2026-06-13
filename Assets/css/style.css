@@ -1,0 +1,100 @@
+body {
+    background: #0f172a;
+    color: #fff;
+}
+
+a, a:link {
+    text-decoration: none;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 20px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.badge-soft {
+    background: rgba(59, 130, 246, .15);
+    color: #60a5fa;
+}
+
+.event-log {
+    font-family: monospace;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, .35);
+    border-radius: 15px;
+    padding: 15px;
+    height: 280px;
+    overflow-y: auto;
+}
+
+.file-row {
+    transition: .2s;
+}
+
+.file-row:hover {
+    background: rgba(255, 255, 255, .05);
+}
+
+.btn-download {
+    background: #f59e0b;
+    border: none;
+}
+
+.btn-download:hover {
+    background: #d97706;
+}
+
+.observer-active {
+    color: #22c55e;
+}
+
+.observer-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-social img {
+    width: 30px;
+    opacity: .4;
+    transition: .2s;
+}
+
+.footer-social li a:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+/*==============*/
+
+.error-code {
+    font-size: 96px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    background: #2563eb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.muted {
+    color: #94a3b8;
+}
