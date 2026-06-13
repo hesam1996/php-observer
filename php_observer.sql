@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2026 at 10:12 AM
+-- Generation Time: Jun 13, 2026 at 01:22 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,9 +40,9 @@ CREATE TABLE `files` (
 --
 
 INSERT INTO `files` (`id`, `title`, `size`, `downloads`, `slug`) VALUES
-(1, 'Laravel', '10 MB', 0, 'laravel'),
-(2, 'Docker', '7 MB', 0, 'docker'),
-(3, 'Design Patterns', '9 MB', 0, 'design-patterns');
+(1, 'Laravel', '10 MB', 3, 'laravel'),
+(2, 'Docker', '7 MB', 3, 'docker'),
+(3, 'Design Patterns', '9 MB', 5, 'design-patterns');
 
 -- --------------------------------------------------------
 
@@ -53,6 +53,7 @@ INSERT INTO `files` (`id`, `title`, `size`, `downloads`, `slug`) VALUES
 CREATE TABLE `logs` (
   `id` bigint(20) NOT NULL,
   `msg` varchar(5000) NOT NULL,
+  `ip` varchar(255) NOT NULL,
   `creator` varchar(255) NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
