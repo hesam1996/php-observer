@@ -6,26 +6,31 @@ observers such as logging, analytics, and counters.
 
 ### Note that no actual file is downloaded, This is just a test
 
+🌐 [Visit Demo](https://php-observer.kazembeygi.com)
+
 ---
 
 ## How it works
 
-1. User clicks download button in `index.php`
-2. `FileDownload` use case is triggered
-3. A `DownloadEvent` is created containing:
-    - file id
-    - file slug
-    - file name
-    - user IP
-    - timestamp
+1️⃣ User clicks download button in `index.php`
 
-4. Event is passed to Subject (`FileDownload`)
-5. All registered observers are notified:
-    - Analytics → tracks event
-    - Counter → increases download count
-    - Logger → saves log
+2️⃣ `FileDownload` use case is triggered
 
-6. Each observer reacts independently without affecting others
+3️⃣ A `DownloadEvent` is created containing:
+- file id
+- file slug
+- file name
+- user IP
+- timestamp
+
+4️⃣ Event is passed to Subject (`FileDownload`)
+
+5️⃣ All registered observers are notified:
+- Analytics → tracks event
+- Counter → increases download count
+- Logger → saves log
+
+6️⃣ Each observer reacts independently without affecting others
 
 ---
 
@@ -40,13 +45,13 @@ observers such as logging, analytics, and counters.
     - Observers/Counter.php
     - Observers/Analytics.php
 
-The Subject does not know anything about observers.  
-It only broadcasts an event, and observers react independently.
+🟡 The Subject does not know anything about observers.  
+🟡 It only broadcasts an event, and observers react independently.
 
 ---
 
 Implemented by Hesam kazembeygi
 
-[My Website](https://kazembeygi.com)
+📌 [My Website](https://kazembeygi.com)
 
-[My LinkedIn](https://www.linkedin.com/in/hessam-kazembeygi)
+📌 [My LinkedIn](https://www.linkedin.com/in/hessam-kazembeygi)
