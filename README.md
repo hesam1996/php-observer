@@ -48,10 +48,13 @@ observers such as logging, analytics, and counters.
 🟡 The Subject does not know anything about observers.  
 🟡 It only broadcasts an event, and observers react independently.
 
----
-
 Implemented by Hesam kazembeygi
 
 📌 [My Website](https://kazembeygi.com)
 
 📌 [My LinkedIn](https://www.linkedin.com/in/hessam-kazembeygi)
+
+---
+
+## License
+PHP Observer is open-sourced software licensed under the [MIT license](https://opensource.org/license/MIT).
