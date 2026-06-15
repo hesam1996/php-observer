@@ -19,7 +19,7 @@ class LogController
         return $logs;
     }
 
-    public static function store(string $message, string $creator, string $ip): void
+    public function store(string $message, string $creator, string $ip): void
     {
         $connection = DBConnection::$connection;
 
